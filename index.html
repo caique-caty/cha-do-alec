@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chá de Bebé do Alec · Um pequeno príncipe está a caminho</title>
+<meta name="description" content="Junta-te a nós para celebrar o chá de bebé do Alec — 6 de Junho 2026, em Beiriz.">
+<link rel="icon" type="image/png" href="assets/convite-alec.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">Alec</div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#evento">Evento</a></li>
+    <li><a href="#rsvp">RSVP</a></li>
+    <li><a href="#presentes">Presentes</a></li>
+  </ul>
+  <button class="menu-toggle" id="menuToggle">☰</button>
+</nav>
+
+<header class="hero">
+  <div class="hero-content">
+    <div class="invite-frame">
+      <img src="assets/convite-alec.png" alt="Convite do Chá de Bebé do Alec" class="invite-image">
+    </div>
+    <p class="hero-tagline" data-key="heroTagline">Junta-te a nós para celebrar a chegada do nosso pequeno príncipe, entre dragões adormecidos, castelos de aquarela, cristais mágicos e folhas de carvalho.</p>
+    <div class="hero-cta">
+      <a href="#rsvp" class="btn btn-primary">Confirmar presença</a>
+      <a href="#presentes" class="btn btn-secondary">Ver presentes</a>
+    </div>
+  </div>
+</header>
+
+<section id="evento">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow" data-key="eventoEyebrow">Os detalhes</span>
+      <h2 class="section-title" data-key="eventoTitle">Quando, onde, <em>como chegar</em></h2>
+      <div class="divider">✦</div>
+    </div>
+    <div class="event-grid">
+      <div class="event-card">
+        <svg class="event-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+          <rect x="3" y="4" width="18" height="18" rx="1"/>
+          <path d="M16 2v4M8 2v4M3 10h18"/>
+          <circle cx="12" cy="15" r="1.5" fill="currentColor"/>
+        </svg>
+        <h3>Data</h3>
+        <p class="highlight" data-key="date">6 de Junho de 2026</p>
+        <p data-key="time">a partir das 14h30</p>
+      </div>
+      <div class="event-card">
+        <svg class="event-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+          <circle cx="12" cy="10" r="3"/>
+        </svg>
+        <h3>Local</h3>
+        <p class="highlight" data-key="venue">Rua do Rebolido, 34</p>
+        <p data-key="address">Beiriz</p>
+        <a href="https://maps.app.goo.gl/wEihpZzXgj432cAa9" target="_blank" rel="noopener" class="maps-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><path d="M9 20l-5.447-2.724A1 1 0 0 1 3 16.382V5.618a1 1 0 0 1 1.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0 0 21 18.382V7.618a1 1 0 0 0-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+          Ver no Google Maps
+        </a>
+      </div>
+      <div class="event-card">
+        <svg class="event-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+          <path d="M12 2 L14 8 L20 8 L15 12 L17 19 L12 15 L7 19 L9 12 L4 8 L10 8 Z"/>
+        </svg>
+        <h3>Vibe</h3>
+        <p class="highlight" data-key="theme">Reino Encantado</p>
+        <p data-key="dress">Elegância, natureza e aventura</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="rsvp">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow" data-key="rsvpEyebrow">Confirmar presença</span>
+      <h2 class="section-title" data-key="rsvpTitle">Conta-nos se <em>vens connosco</em></h2>
+      <div class="divider">✦</div>
+      <p class="section-sub" data-key="rsvpSub">A vossa presença é o nosso maior presente. Pedimos só que confirmem para podermos planear bem.</p>
+    </div>
+
+    <div class="rsvp-wrapper">
+      <form class="rsvp-form" id="rsvpForm">
+        <div class="form-group">
+          <label for="rsvp-name">Nome</label>
+          <input type="text" id="rsvp-name" required placeholder="Nome" maxlength="100">
+        </div>
+        <div class="form-group">
+          <label for="rsvp-status">Vêm?</label>
+          <select id="rsvp-status" required>
+            <option value="yes">Sim, lá estarei!</option>
+            <option value="maybe">Talvez, ainda confirmo</option>
+            <option value="no">Não posso ir</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="rsvp-guests">Número de pessoas</label>
+          <input type="number" id="rsvp-guests" min="1" max="20" value="1">
+        </div>
+        <div class="form-group">
+          <label for="rsvp-message">Uma mensagem para o Alec (opcional)</label>
+          <textarea id="rsvp-message" placeholder="Mal podemos esperar para te conhecer..." maxlength="1000"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">Enviar confirmação</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section id="presentes">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow" data-key="presentesEyebrow">Lista de mimos</span>
+      <h2 class="section-title" data-key="presentesTitle">Tesouros para o <em>nosso príncipe</em></h2>
+      <div class="divider">✦</div>
+      <p class="section-sub" data-key="presentesSub">Reservem o presente que escolheram para evitar duplicados. Cada item tem o link directo para a loja.</p>
+    </div>
+
+    <div class="gifts-controls">
+      <div class="filter-tabs">
+        <button class="filter-tab active" data-filter="todos">Todos</button>
+        <button class="filter-tab" data-filter="disponivel">Disponíveis</button>
+        <button class="filter-tab" data-filter="reservado">Reservados</button>
+      </div>
+    </div>
+
+    <div class="gifts-grid" id="giftsGrid">
+      <div class="empty-state">A carregar presentes…</div>
+    </div>
+  </div>
+</section>
+
+<div class="toast" id="toast"></div>
+
+<footer>
+  <div class="footer-name">Alec</div>
+  <div class="footer-tagline" data-key="footerTagline">~ Um pequeno príncipe ~</div>
+  <p>Reino encantado · elegância, natureza, aventura e doçura · 2026</p>
+</footer>
+
+<script type="module">
+  import {
+    subscribeEventDetails,
+    subscribeGifts,
+    reserveGiftSingular, reserveGiftMultiple,
+    cancelGiftSingular, cancelGiftMultiple,
+    submitRsvp
+  } from './assets/firebase-data.js';
+
+  import {
+    renderGiftCards, askGuestName, getGuestName,
+    showToast, showConnectionStatus, hideConnectionStatus,
+    escapeHtml
+  } from './assets/ui.js';
+
+  // ===== STATE =====
+  let gifts = [];
+  let currentFilter = 'todos';
+
+  // ===== INIT =====
+  showConnectionStatus('A ligar…', 'loading');
+
+  // Subscrever em tempo real aos detalhes do evento
+  subscribeEventDetails((details) => {
+    Object.keys(details).forEach(key => {
+      const els = document.querySelectorAll(`[data-key="${key}"]`);
+      els.forEach(el => {
+        const val = details[key];
+        // Para títulos que têm <em>, usamos innerHTML; para os outros, textContent
+        if (key === 'eventoTitle' || key === 'presentesTitle' || key === 'rsvpTitle' || key === 'heroTagline' || key === 'presentesSub' || key === 'rsvpSub' || key === 'footerTagline') {
+          el.innerHTML = val;
+        } else {
+          el.textContent = val;
+        }
+      });
+    });
+  });
+
+  // Subscrever em tempo real à lista de presentes
+  let firstGiftsLoad = true;
+  subscribeGifts((newGifts) => {
+    gifts = newGifts;
+    if (firstGiftsLoad) {
+      hideConnectionStatus();
+      firstGiftsLoad = false;
+    }
+    renderAll();
+  });
+
+  function renderAll() {
+    renderGiftCards(document.getElementById('giftsGrid'), gifts, {
+      isOrganizer: false,
+      currentFilter,
+      onReserve: handleReserve,
+      onCancelReserve: handleCancelReserve,
+      onCancelMultiReserve: handleCancelMultiReserve,
+      onCancelOwnMultiReserve: handleCancelOwnMultiReserve
+    });
+  }
+
+  // ===== ACÇÕES =====
+  async function handleReserve(id) {
+    const gift = gifts.find(g => g.id === id);
+    if (!gift) return;
+    const name = askGuestName();
+    if (!name) return;
+    try {
+      if (gift.multipleReservations) {
+        await reserveGiftMultiple(id, name);
+        showToast('Obrigado, ' + name + '!');
+      } else {
+        await reserveGiftSingular(id, name);
+        showToast('Presente reservado · obrigado!');
+      }
+    } catch (e) {
+      if (e.message === 'ALREADY_RESERVED') {
+        showToast('Outra pessoa acabou de reservar este presente');
+      } else if (e.message === 'ALREADY_IN_LIST') {
+        showToast('Já tens este presente reservado');
+      } else {
+        console.error(e);
+        showConnectionStatus('Erro ao reservar', 'error');
+      }
+    }
+  }
+
+  async function handleCancelReserve(id) {
+    const gift = gifts.find(g => g.id === id);
+    if (!gift) return;
+    const me = getGuestName();
+    if (!me || (gift.reservedBy && gift.reservedBy.toLowerCase() !== me.toLowerCase())) {
+      showToast('Só podes cancelar as tuas próprias reservas');
+      return;
+    }
+    if (!confirm('Cancelar a reserva deste presente?')) return;
+    try {
+      await cancelGiftSingular(id);
+      showToast('Reserva cancelada');
+    } catch (e) {
+      console.error(e);
+      showConnectionStatus('Erro ao cancelar', 'error');
+    }
+  }
+
+  async function handleCancelMultiReserve(id, idx) {
+    const gift = gifts.find(g => g.id === id);
+    if (!gift) return;
+    const name = (gift.reservations || [])[idx];
+    if (!name) return;
+    const me = getGuestName();
+    if (!me || name.toLowerCase() !== me.toLowerCase()) {
+      showToast('Só podes cancelar as tuas próprias reservas');
+      return;
+    }
+    if (!confirm('Cancelar a tua reserva?')) return;
+    try {
+      await cancelGiftMultiple(id, name);
+      showToast('Reserva cancelada');
+    } catch (e) {
+      console.error(e);
+      showConnectionStatus('Erro ao cancelar', 'error');
+    }
+  }
+
+  async function handleCancelOwnMultiReserve(id) {
+    const me = getGuestName();
+    if (!me) return;
+    if (!confirm('Cancelar a tua reserva?')) return;
+    try {
+      await cancelGiftMultiple(id, me);
+      showToast('A tua reserva foi cancelada');
+    } catch (e) {
+      console.error(e);
+      showConnectionStatus('Erro ao cancelar', 'error');
+    }
+  }
+
+  // ===== FILTROS =====
+  document.querySelectorAll('.filter-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      document.querySelectorAll('.filter-tab').forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      currentFilter = tab.dataset.filter;
+      renderAll();
+    });
+  });
+
+  // ===== RSVP =====
+  document.getElementById('rsvpForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const data = {
+      name: document.getElementById('rsvp-name').value.trim(),
+      status: document.getElementById('rsvp-status').value,
+      guests: parseInt(document.getElementById('rsvp-guests').value) || 1,
+      message: document.getElementById('rsvp-message').value.trim()
+    };
+    if (!data.name) {
+      showToast('O nome é obrigatório');
+      return;
+    }
+    try {
+      await submitRsvp(data);
+      e.target.reset();
+      document.getElementById('rsvp-guests').value = 1;
+      showToast('Confirmação recebida · obrigado!');
+    } catch (err) {
+      console.error(err);
+      showConnectionStatus('Erro ao enviar RSVP', 'error');
+    }
+  });
+
+  // ===== MENU MOBILE =====
+  document.getElementById('menuToggle').addEventListener('click', () => {
+    document.getElementById('navLinks').classList.toggle('open');
+  });
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    a.addEventListener('click', () => {
+      document.getElementById('navLinks').classList.remove('open');
+    });
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chá de Bebé do Alec · Painel dos pais</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/png" href="assets/convite-alec.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">Alec · pais</div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#evento">Evento</a></li>
+    <li><a href="#rsvp">RSVP</a></li>
+    <li><a href="#presentes">Presentes</a></li>
+    <li><a href="index.html" style="color:var(--gold);">Ver site público →</a></li>
+  </ul>
+  <button class="menu-toggle" id="menuToggle">☰</button>
+</nav>
+
+<header class="hero">
+  <div class="hero-content">
+    <div class="invite-frame">
+      <img src="assets/convite-alec.png" alt="Convite do Chá de Bebé do Alec" class="invite-image">
+    </div>
+    <p class="hero-tagline editable-rich" contenteditable="true" data-key="heroTagline">Junta-te a nós para celebrar a chegada do nosso pequeno príncipe, entre dragões adormecidos, castelos de aquarela, cristais mágicos e folhas de carvalho.</p>
+    <div class="hero-cta">
+      <a href="#rsvp" class="btn btn-primary">Ver confirmações</a>
+      <a href="#presentes" class="btn btn-secondary">Gerir presentes</a>
+    </div>
+  </div>
+</header>
+
+<section id="evento">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow editable-rich" contenteditable="true" data-key="eventoEyebrow">Os detalhes</span>
+      <h2 class="section-title editable-rich" contenteditable="true" data-key="eventoTitle">Quando, onde, <em>como chegar</em></h2>
+      <div class="divider">✦</div>
+    </div>
+    <div class="event-grid">
+      <div class="event-card">
+        <svg class="event-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+          <rect x="3" y="4" width="18" height="18" rx="1"/>
+          <path d="M16 2v4M8 2v4M3 10h18"/>
+          <circle cx="12" cy="15" r="1.5" fill="currentColor"/>
+        </svg>
+        <h3>Data</h3>
+        <p class="highlight editable" contenteditable="true" data-key="date">6 de Junho de 2026</p>
+        <p class="editable" contenteditable="true" data-key="time">a partir das 14h30</p>
+      </div>
+      <div class="event-card">
+        <svg class="event-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+          <circle cx="12" cy="10" r="3"/>
+        </svg>
+        <h3>Local</h3>
+        <p class="highlight editable" contenteditable="true" data-key="venue">Rua do Rebolido, 34</p>
+        <p class="editable" contenteditable="true" data-key="address">Beiriz</p>
+        <a href="https://maps.app.goo.gl/wEihpZzXgj432cAa9" target="_blank" rel="noopener" class="maps-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><path d="M9 20l-5.447-2.724A1 1 0 0 1 3 16.382V5.618a1 1 0 0 1 1.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0 0 21 18.382V7.618a1 1 0 0 0-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+          Ver no Google Maps
+        </a>
+      </div>
+      <div class="event-card">
+        <svg class="event-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+          <path d="M12 2 L14 8 L20 8 L15 12 L17 19 L12 15 L7 19 L9 12 L4 8 L10 8 Z"/>
+        </svg>
+        <h3>Vibe</h3>
+        <p class="highlight editable" contenteditable="true" data-key="theme">Reino Encantado</p>
+        <p class="editable" contenteditable="true" data-key="dress">Elegância, natureza e aventura</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="rsvp">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow editable-rich" contenteditable="true" data-key="rsvpEyebrow">Confirmar presença</span>
+      <h2 class="section-title editable-rich" contenteditable="true" data-key="rsvpTitle">Conta-nos se <em>vens connosco</em></h2>
+      <div class="divider">✦</div>
+      <p class="section-sub editable-rich" contenteditable="true" data-key="rsvpSub">A vossa presença é o nosso maior presente. Pedimos só que confirmem para podermos planear bem.</p>
+    </div>
+
+    <div class="rsvp-wrapper with-list">
+      <form class="rsvp-form" id="rsvpForm">
+        <div class="form-group">
+          <label for="rsvp-name">Nome</label>
+          <input type="text" id="rsvp-name" required placeholder="Nome" maxlength="100">
+        </div>
+        <div class="form-group">
+          <label for="rsvp-status">Vêm?</label>
+          <select id="rsvp-status" required>
+            <option value="yes">Sim, lá estarei!</option>
+            <option value="maybe">Talvez, ainda confirmo</option>
+            <option value="no">Não posso ir</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="rsvp-guests">Número de pessoas</label>
+          <input type="number" id="rsvp-guests" min="1" max="20" value="1">
+        </div>
+        <div class="form-group">
+          <label for="rsvp-message">Mensagem (opcional)</label>
+          <textarea id="rsvp-message" placeholder="Mal podemos esperar para te conhecer..." maxlength="1000"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">Adicionar / Atualizar</button>
+      </form>
+
+      <div class="rsvp-list">
+        <h4>
+          Confirmações
+          <span class="rsvp-count" id="rsvpCount">0</span>
+        </h4>
+        <div id="rsvpItems">
+          <p style="color:var(--ink-soft); font-style:italic; text-align:center; padding:2rem 0; font-family:'Cormorant Garamond',serif;">Sem confirmações ainda.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="presentes">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow editable-rich" contenteditable="true" data-key="presentesEyebrow">Lista de mimos</span>
+      <h2 class="section-title editable-rich" contenteditable="true" data-key="presentesTitle">Tesouros para o <em>nosso príncipe</em></h2>
+      <div class="divider">✦</div>
+      <p class="section-sub editable-rich" contenteditable="true" data-key="presentesSub">Reservem o presente que escolheram para evitar duplicados. Cada item tem o link directo para a loja.</p>
+    </div>
+
+    <div class="gifts-controls">
+      <div class="filter-tabs">
+        <button class="filter-tab active" data-filter="todos">Todos</button>
+        <button class="filter-tab" data-filter="disponivel">Disponíveis</button>
+        <button class="filter-tab" data-filter="reservado">Reservados</button>
+      </div>
+      <button class="add-gift-btn" id="addGiftBtn">+ Adicionar presente</button>
+    </div>
+
+    <div class="gifts-grid" id="giftsGrid">
+      <div class="empty-state">A carregar presentes…</div>
+    </div>
+  </div>
+</section>
+
+<!-- MODAL ADICIONAR/EDITAR PRESENTE -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal">
+    <h3 id="modalTitle">~ Adicionar presente ~</h3>
+    <div class="form-group">
+      <label for="gift-name-input">Nome do presente</label>
+      <input type="text" id="gift-name-input" placeholder="Ex: Carrinho de bebé" maxlength="200">
+    </div>
+    <div class="form-group">
+      <label for="gift-store-input">Loja</label>
+      <input type="text" id="gift-store-input" placeholder="Ex: Amazon, Bébécar, El Corte Inglés" maxlength="100">
+    </div>
+    <div class="form-group">
+      <label for="gift-description-input">Marca / Observação (opcional)</label>
+      <input type="text" id="gift-description-input" placeholder="Ex: Philips Avent, 120x60cm" maxlength="300">
+    </div>
+    <div class="form-group">
+      <label for="gift-price-input">Preço (opcional)</label>
+      <input type="text" id="gift-price-input" placeholder="Ex: 89,99 €" maxlength="50">
+    </div>
+    <div class="form-group">
+      <label for="gift-link-input">Link para o produto</label>
+      <input type="url" id="gift-link-input" placeholder="https://..." maxlength="2000">
+    </div>
+    <div class="form-group" style="background:rgba(184,142,74,0.06); padding:0.9rem 1rem; border:1px dashed rgba(184,142,74,0.4);">
+      <label style="display:flex; align-items:flex-start; gap:0.7rem; cursor:pointer; margin-bottom:0;">
+        <input type="checkbox" id="gift-multiple-input" style="width:auto; margin-top:0.25rem; cursor:pointer; accent-color:var(--moss);">
+        <span style="flex:1; text-transform:none; letter-spacing:0; font-family:'Cormorant Garamond',serif; font-size:1rem; color:var(--ink); font-weight:400;">
+          <strong style="font-family:'Cinzel Decorative',serif; font-size:0.7rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--moss); display:block; margin-bottom:0.3rem;">Várias pessoas podem reservar</strong>
+          <span style="font-style:italic; color:var(--ink-soft); font-size:0.95rem;">Marca isto para itens onde várias pessoas podem contribuir (fraldas, toalhitas, etc.).</span>
+        </span>
+      </label>
+    </div>
+    <div class="form-group">
+      <label>Imagem do produto</label>
+
+      <!-- Opção A: escolher ficheiro do computador -->
+      <div style="display:flex; gap:0.5rem; align-items:center; flex-wrap:wrap; margin-bottom:0.6rem;">
+        <input type="file" id="gift-image-file" accept="image/*" style="display:none;">
+        <button type="button" class="btn btn-secondary" id="gift-image-upload-btn" style="padding:0.5rem 1rem; font-size:0.65rem;">📁 Escolher ficheiro</button>
+        <span style="font-size:0.85rem; color:var(--ink-soft); font-style:italic;">ou cola um URL abaixo</span>
+      </div>
+
+      <!-- Opção B: URL directo -->
+      <input type="url" id="gift-image-input" placeholder="imagens/produto.jpg ou https://..." maxlength="2000">
+
+      <!-- Instruções dinâmicas após escolher ficheiro -->
+      <div id="local-file-instruction" style="display:none; margin-top:0.75rem; padding:0.8rem 1rem; background:rgba(184,142,74,0.08); border:1px dashed var(--gold); font-family:'Cormorant Garamond',serif; font-size:0.95rem; line-height:1.5;">
+        <div style="font-family:'Cinzel Decorative',serif; font-size:0.65rem; letter-spacing:0.15em; color:var(--moss); text-transform:uppercase; margin-bottom:0.5rem;">📋 Próximos passos</div>
+        <div id="local-file-instruction-text"></div>
+        <button type="button" id="download-prepared-btn" style="display:none; margin-top:0.6rem; padding:0.45rem 1rem; background:var(--moss); color:var(--cream); border:1px solid var(--gold); font-family:'Cinzel Decorative',serif; font-size:0.6rem; letter-spacing:0.15em; text-transform:uppercase; cursor:pointer;">⬇ Descarregar com nome certo</button>
+      </div>
+
+      <!-- Pré-visualização -->
+      <div id="image-preview" style="margin-top:0.75rem; display:none; text-align:center;">
+        <img id="image-preview-img" style="max-width:100%; max-height:160px; border:1px solid var(--gold); background:var(--parchment);" alt="Pré-visualização">
+        <div id="image-preview-status" style="margin-top:0.5rem; font-size:0.85rem; font-style:italic;"></div>
+      </div>
+    </div>
+    <div class="modal-actions">
+      <button class="btn btn-secondary" id="modalCancel">Cancelar</button>
+      <button class="btn btn-primary" id="modalSave">Adicionar</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<!-- Painel do organizador -->
+<div id="organizerBadge">
+  <div class="org-label">✦ Modo organizador</div>
+  <button class="org-export" id="orgExportBtn">⬇ Exportar JSON</button>
+  <button class="org-clear" id="orgClearBtn">⊗ Apagar tudo</button>
+</div>
+
+<footer>
+  <div class="footer-name">Alec</div>
+  <div class="footer-tagline editable-rich" contenteditable="true" data-key="footerTagline">~ Um pequeno príncipe ~</div>
+  <p>Reino encantado · elegância, natureza, aventura e doçura · 2026</p>
+</footer>
+
+<script type="module">
+  import {
+    subscribeEventDetails, updateEventDetail,
+    subscribeGifts, createGift, updateGift, deleteGift,
+    reserveGiftSingular, reserveGiftMultiple,
+    cancelGiftSingular, cancelGiftMultiple,
+    submitRsvp, subscribeRsvps, deleteRsvp,
+    exportAllData, deleteAllData, seedGiftsIfEmpty
+  } from './assets/firebase-data.js';
+
+  import { DEFAULT_GIFTS } from './assets/default-gifts.js';
+
+  import {
+    renderGiftCards, askGuestName, getGuestName,
+    showToast, showConnectionStatus, hideConnectionStatus,
+    escapeHtml, setupPlainPaste
+  } from './assets/ui.js';
+
+  // ===== STATE =====
+  let gifts = [];
+  let rsvps = [];
+  let currentFilter = 'todos';
+  let editingId = null;
+
+  // ===== INIT =====
+  showConnectionStatus('A ligar…', 'loading');
+
+  // Seed inicial — só corre se a colecção estiver vazia
+  await seedGiftsIfEmpty(DEFAULT_GIFTS);
+
+  // Subscrever em tempo real aos detalhes do evento
+  subscribeEventDetails((details) => {
+    Object.keys(details).forEach(key => {
+      const els = document.querySelectorAll(`[data-key="${key}"]`);
+      els.forEach(el => {
+        // Não atualizar se estiver focado (a editar)
+        if (document.activeElement === el) return;
+        const val = details[key];
+        if (key === 'eventoTitle' || key === 'presentesTitle' || key === 'rsvpTitle' || key === 'heroTagline' || key === 'presentesSub' || key === 'rsvpSub' || key === 'footerTagline') {
+          el.innerHTML = val;
+        } else {
+          el.textContent = val;
+        }
+      });
+    });
+  });
+
+  let firstGiftsLoad = true;
+  subscribeGifts((newGifts) => {
+    gifts = newGifts;
+    if (firstGiftsLoad) {
+      hideConnectionStatus();
+      firstGiftsLoad = false;
+    }
+    renderAllGifts();
+  });
+
+  subscribeRsvps((newRsvps) => {
+    rsvps = newRsvps;
+    renderRsvps();
+  });
+
+  function renderAllGifts() {
+    renderGiftCards(document.getElementById('giftsGrid'), gifts, {
+      isOrganizer: true,
+      currentFilter,
+      onReserve: handleReserve,
+      onCancelReserve: handleCancelReserve,
+      onCancelMultiReserve: handleCancelMultiReserve,
+      onCancelOwnMultiReserve: handleCancelOwnMultiReserve,
+      onEdit: openEditModal,
+      onDelete: handleDeleteGift
+    });
+  }
+
+  // ===== RESERVAS (pais também podem) =====
+  async function handleReserve(id) {
+    const gift = gifts.find(g => g.id === id);
+    if (!gift) return;
+    const name = askGuestName();
+    if (!name) return;
+    try {
+      if (gift.multipleReservations) {
+        await reserveGiftMultiple(id, name);
+        showToast('Obrigado, ' + name + '!');
+      } else {
+        await reserveGiftSingular(id, name);
+        showToast('Presente reservado · obrigado!');
+      }
+    } catch (e) {
+      if (e.message === 'ALREADY_RESERVED') showToast('Outra pessoa acabou de reservar');
+      else if (e.message === 'ALREADY_IN_LIST') showToast('Já tens este presente reservado');
+      else { console.error(e); showConnectionStatus('Erro ao reservar', 'error'); }
+    }
+  }
+
+  async function handleCancelReserve(id) {
+    // Pais podem cancelar qualquer reserva singular
+    if (!confirm('Cancelar a reserva deste presente?')) return;
+    try {
+      await cancelGiftSingular(id);
+      showToast('Reserva cancelada');
+    } catch (e) { console.error(e); showConnectionStatus('Erro ao cancelar', 'error'); }
+  }
+
+  async function handleCancelMultiReserve(id, idx) {
+    // Pais podem cancelar qualquer reserva múltipla, clicando na pill
+    const gift = gifts.find(g => g.id === id);
+    if (!gift) return;
+    const name = (gift.reservations || [])[idx];
+    if (!name) return;
+    if (!confirm(`Cancelar a reserva de "${name}"?`)) return;
+    try {
+      await cancelGiftMultiple(id, name);
+      showToast('Reserva cancelada');
+    } catch (e) { console.error(e); showConnectionStatus('Erro', 'error'); }
+  }
+
+  async function handleCancelOwnMultiReserve(id) {
+    const me = getGuestName();
+    if (!me) return;
+    if (!confirm('Cancelar a tua reserva?')) return;
+    try {
+      await cancelGiftMultiple(id, me);
+      showToast('A tua reserva foi cancelada');
+    } catch (e) { console.error(e); showConnectionStatus('Erro', 'error'); }
+  }
+
+  // ===== GERIR PRESENTES (CRUD) =====
+  async function handleDeleteGift(id) {
+    const gift = gifts.find(g => g.id === id);
+    if (!gift) return;
+    if (!confirm(`Remover "${gift.name}" da lista?`)) return;
+    try {
+      await deleteGift(id);
+      showToast('Presente removido');
+    } catch (e) { console.error(e); showConnectionStatus('Erro a remover', 'error'); }
+  }
+
+  const modalOverlay = document.getElementById('modalOverlay');
+
+  function openAddModal() {
+    editingId = null;
+    document.getElementById('modalTitle').textContent = '~ Adicionar presente ~';
+    document.getElementById('modalSave').textContent = 'Adicionar';
+    clearModal();
+    modalOverlay.classList.add('open');
+  }
+
+  function openEditModal(id) {
+    const gift = gifts.find(g => g.id === id);
+    if (!gift) return;
+    editingId = id;
+    document.getElementById('modalTitle').textContent = '~ Editar presente ~';
+    document.getElementById('modalSave').textContent = 'Guardar';
+    document.getElementById('gift-name-input').value = gift.name || '';
+    document.getElementById('gift-store-input').value = gift.store || '';
+    document.getElementById('gift-description-input').value = gift.description || '';
+    document.getElementById('gift-price-input').value = gift.price || '';
+    document.getElementById('gift-link-input').value = gift.link || '';
+    document.getElementById('gift-image-input').value = gift.image || '';
+    document.getElementById('gift-multiple-input').checked = !!gift.multipleReservations;
+    updateImagePreview(gift.image);
+    modalOverlay.classList.add('open');
+  }
+
+  function clearModal() {
+    ['gift-name-input', 'gift-store-input', 'gift-description-input', 'gift-price-input', 'gift-link-input', 'gift-image-input'].forEach(id => {
+      document.getElementById(id).value = '';
+    });
+    document.getElementById('gift-multiple-input').checked = false;
+    document.getElementById('gift-image-file').value = '';
+    document.getElementById('image-preview').style.display = 'none';
+    document.getElementById('local-file-instruction').style.display = 'none';
+    document.getElementById('download-prepared-btn').style.display = 'none';
+    preparedDownload = null;
+  }
+
+  document.getElementById('addGiftBtn').addEventListener('click', openAddModal);
+  document.getElementById('modalCancel').addEventListener('click', () => {
+    modalOverlay.classList.remove('open');
+    clearModal();
+  });
+  modalOverlay.addEventListener('click', (e) => {
+    if (e.target === modalOverlay) {
+      modalOverlay.classList.remove('open');
+      clearModal();
+    }
+  });
+  document.getElementById('gift-image-input').addEventListener('input', (e) => {
+    updateImagePreview(e.target.value);
+  });
+
+  function updateImagePreview(url) {
+    const preview = document.getElementById('image-preview');
+    const img = document.getElementById('image-preview-img');
+    const status = document.getElementById('image-preview-status');
+    if (url && url.trim()) {
+      img.src = url.trim();
+      img.style.display = 'inline-block';
+      preview.style.display = 'block';
+      status.textContent = 'A carregar imagem...';
+      status.style.color = 'var(--ink-soft)';
+      img.onload = () => {
+        status.textContent = '✓ Imagem carregada com sucesso';
+        status.style.color = 'var(--moss)';
+      };
+      img.onerror = () => {
+        status.textContent = '✗ Não foi possível carregar. Verifica que o URL é da imagem (.jpg/.png).';
+        status.style.color = '#a04040';
+        img.style.display = 'none';
+      };
+    } else {
+      preview.style.display = 'none';
+    }
+  }
+
+  // ===== UPLOAD LOCAL DE IMAGEM =====
+  // Converte o nome do produto num slug seguro para nome de ficheiro
+  function slugifyName(text) {
+    return (text || 'imagem')
+      .toLowerCase()
+      .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+      .replace(/[^a-z0-9]+/g, '-')
+      .replace(/^-+|-+$/g, '')
+      .substring(0, 40) || 'imagem';
+  }
+
+  // Variável temporária com o blob descarregado pelo utilizador
+  let preparedDownload = null;
+
+  document.getElementById('gift-image-upload-btn').addEventListener('click', () => {
+    document.getElementById('gift-image-file').click();
+  });
+
+  document.getElementById('gift-image-file').addEventListener('change', (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+    if (!file.type.startsWith('image/')) {
+      showToast('Tem de ser um ficheiro de imagem');
+      return;
+    }
+
+    // Determinar nome final baseado no nome do presente
+    const productName = document.getElementById('gift-name-input').value || 'imagem';
+    const ext = (file.name.split('.').pop() || 'jpg').toLowerCase();
+    const finalName = slugifyName(productName) + '.' + ext;
+    const relativePath = 'imagens/' + finalName;
+
+    // Preencher o campo URL com o caminho relativo
+    document.getElementById('gift-image-input').value = relativePath;
+
+    // Mostrar instruções
+    const instruction = document.getElementById('local-file-instruction');
+    const instructionText = document.getElementById('local-file-instruction-text');
+    instruction.style.display = 'block';
+    instructionText.innerHTML = `
+      Escolheste: <strong>${escapeHtml(file.name)}</strong><br>
+      Será guardado como: <strong style="color:var(--moss);">${escapeHtml(relativePath)}</strong>
+      <br><br>
+      <strong>Tens duas opções:</strong>
+      <ol style="margin:0.4rem 0 0 1.2rem; padding:0; font-size:0.9rem;">
+        <li>Já tens o ficheiro na pasta <code>imagens/</code> com este nome? Carrega "Guardar" e está pronto.</li>
+        <li>Ainda não? Clica em "Descarregar com nome certo", move o ficheiro para a pasta <code>imagens/</code>, e depois carrega "Guardar".</li>
+      </ol>
+    `;
+
+    // Preparar o download
+    const reader = new FileReader();
+    reader.onload = (ev) => {
+      preparedDownload = { dataUrl: ev.target.result, filename: finalName };
+      document.getElementById('download-prepared-btn').style.display = 'inline-block';
+
+      // Preview imediato com o dataURL (mesmo antes do ficheiro estar na pasta)
+      const preview = document.getElementById('image-preview');
+      const img = document.getElementById('image-preview-img');
+      const status = document.getElementById('image-preview-status');
+      img.src = ev.target.result;
+      img.style.display = 'inline-block';
+      preview.style.display = 'block';
+      status.textContent = '✓ Pré-visualização (ficheiro do teu computador)';
+      status.style.color = 'var(--moss)';
+    };
+    reader.readAsDataURL(file);
+  });
+
+  document.getElementById('download-prepared-btn').addEventListener('click', () => {
+    if (!preparedDownload) return;
+    const a = document.createElement('a');
+    a.href = preparedDownload.dataUrl;
+    a.download = preparedDownload.filename;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    showToast('Ficheiro descarregado · move para a pasta imagens/');
+  });
+
+  document.getElementById('modalSave').addEventListener('click', async () => {
+    const data = {
+      name: document.getElementById('gift-name-input').value.trim(),
+      store: document.getElementById('gift-store-input').value.trim(),
+      description: document.getElementById('gift-description-input').value.trim(),
+      price: document.getElementById('gift-price-input').value.trim(),
+      link: document.getElementById('gift-link-input').value.trim(),
+      image: document.getElementById('gift-image-input').value.trim(),
+      multipleReservations: document.getElementById('gift-multiple-input').checked,
+      category: 'box',
+      reserved: false,
+      reservedBy: null,
+      reservations: []
+    };
+    if (!data.name || !data.store) {
+      showToast('Nome e loja são obrigatórios');
+      return;
+    }
+    try {
+      if (editingId !== null) {
+        // Editar: manter reservations e reserved/reservedBy
+        const existing = gifts.find(g => g.id === editingId);
+        const merged = {
+          ...existing,
+          name: data.name,
+          store: data.store,
+          description: data.description,
+          price: data.price,
+          link: data.link,
+          image: data.image,
+          multipleReservations: data.multipleReservations
+        };
+        // Se passou de singular para múltiplo, migrar reservedBy → reservations
+        if (data.multipleReservations && existing.reservedBy && !(existing.reservations || []).length) {
+          merged.reservations = [existing.reservedBy];
+          merged.reserved = false;
+          merged.reservedBy = null;
+        }
+        await updateGift(editingId, merged);
+        showToast('Presente atualizado');
+      } else {
+        await createGift(data);
+        showToast('Presente adicionado');
+      }
+      modalOverlay.classList.remove('open');
+      clearModal();
+      editingId = null;
+    } catch (e) {
+      console.error(e);
+      showConnectionStatus('Erro a guardar', 'error');
+    }
+  });
+
+  // ===== FILTROS =====
+  document.querySelectorAll('.filter-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      document.querySelectorAll('.filter-tab').forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      currentFilter = tab.dataset.filter;
+      renderAllGifts();
+    });
+  });
+
+  // ===== RSVP — SUBMETER & VER LISTA =====
+  document.getElementById('rsvpForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const data = {
+      name: document.getElementById('rsvp-name').value.trim(),
+      status: document.getElementById('rsvp-status').value,
+      guests: parseInt(document.getElementById('rsvp-guests').value) || 1,
+      message: document.getElementById('rsvp-message').value.trim()
+    };
+    if (!data.name) {
+      showToast('O nome é obrigatório');
+      return;
+    }
+    try {
+      await submitRsvp(data);
+      e.target.reset();
+      document.getElementById('rsvp-guests').value = 1;
+      showToast('RSVP guardado');
+    } catch (err) {
+      console.error(err);
+      showConnectionStatus('Erro ao enviar RSVP', 'error');
+    }
+  });
+
+  function renderRsvps() {
+    const list = document.getElementById('rsvpItems');
+    const count = document.getElementById('rsvpCount');
+
+    // Ordenar: yes primeiro, depois maybe, depois no
+    const order = { yes: 0, maybe: 1, no: 2 };
+    const sorted = [...rsvps].sort((a, b) => (order[a.status] ?? 3) - (order[b.status] ?? 3));
+
+    const yesCount = rsvps.filter(r => r.status === 'yes').reduce((s, r) => s + (r.guests || 1), 0);
+    count.textContent = yesCount;
+
+    if (rsvps.length === 0) {
+      list.innerHTML = '<p style="color:var(--ink-soft); font-style:italic; text-align:center; padding:2rem 0; font-family:\'Cormorant Garamond\',serif;">Sem confirmações ainda.</p>';
+      return;
+    }
+
+    list.innerHTML = sorted.map(r => `
+      <div class="rsvp-item">
+        <div style="flex:1;">
+          <div class="rsvp-name">${escapeHtml(r.name)}</div>
+          <div class="rsvp-meta">${r.guests || 1} ${(r.guests || 1) === 1 ? 'pessoa' : 'pessoas'}${r.message ? ' · "' + escapeHtml(r.message) + '"' : ''}</div>
+        </div>
+        <span class="rsvp-status status-${r.status}">${r.status === 'yes' ? 'Sim' : r.status === 'no' ? 'Não' : 'Talvez'}</span>
+        <button class="rsvp-delete" data-id="${r.id}" title="Remover">×</button>
+      </div>
+    `).join('');
+
+    // Listeners para apagar
+    list.querySelectorAll('.rsvp-delete').forEach(btn => {
+      btn.addEventListener('click', async () => {
+        const id = btn.dataset.id;
+        const rsvp = rsvps.find(r => r.id === id);
+        if (!rsvp) return;
+        if (!confirm(`Remover o RSVP de "${rsvp.name}"?`)) return;
+        try {
+          await deleteRsvp(id);
+          showToast('RSVP removido');
+        } catch (e) {
+          console.error(e);
+          showConnectionStatus('Erro a remover', 'error');
+        }
+      });
+    });
+  }
+
+  // ===== EDIÇÃO INLINE — DETALHES DO EVENTO =====
+  // Cada vez que se perde foco num editable, guarda no Firebase
+  function setupEditables() {
+    document.querySelectorAll('.editable').forEach(el => {
+      el.addEventListener('blur', async () => {
+        const key = el.dataset.key;
+        const value = el.textContent.trim();
+        try {
+          await updateEventDetail(key, value);
+        } catch (e) {
+          console.error(e);
+          showConnectionStatus('Erro a guardar', 'error');
+        }
+      });
+    });
+    document.querySelectorAll('.editable-rich').forEach(el => {
+      el.addEventListener('blur', async () => {
+        const key = el.dataset.key;
+        const value = el.innerHTML.trim();
+        try {
+          await updateEventDetail(key, value);
+        } catch (e) {
+          console.error(e);
+          showConnectionStatus('Erro a guardar', 'error');
+        }
+      });
+    });
+    setupPlainPaste();
+  }
+  setupEditables();
+
+  // ===== EXPORTAR / APAGAR =====
+  document.getElementById('orgExportBtn').addEventListener('click', async () => {
+    try {
+      showConnectionStatus('A exportar…', 'loading');
+      const data = await exportAllData();
+      const json = JSON.stringify(data, null, 2);
+      const blob = new Blob([json], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `cha-alec-backup-${new Date().toISOString().slice(0, 10)}.json`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+      hideConnectionStatus();
+      showToast('Backup descarregado');
+    } catch (e) {
+      console.error(e);
+      showConnectionStatus('Erro a exportar', 'error');
+    }
+  });
+
+  document.getElementById('orgClearBtn').addEventListener('click', async () => {
+    const confirm1 = confirm('Tens a certeza que queres APAGAR TODOS os dados? (presentes, RSVPs, edições)\n\nEsta acção é irreversível.');
+    if (!confirm1) return;
+    const confirm2 = prompt('Para confirmar, escreve "APAGAR" em maiúsculas:');
+    if (confirm2 !== 'APAGAR') {
+      showToast('Acção cancelada');
+      return;
+    }
+    try {
+      showConnectionStatus('A apagar…', 'loading');
+      await deleteAllData();
+      hideConnectionStatus();
+      showToast('Todos os dados foram apagados');
+    } catch (e) {
+      console.error(e);
+      showConnectionStatus('Erro a apagar', 'error');
+    }
+  });
+
+  // ===== MENU MOBILE =====
+  document.getElementById('menuToggle').addEventListener('click', () => {
+    document.getElementById('navLinks').classList.toggle('open');
+  });
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    a.addEventListener('click', () => {
+      document.getElementById('navLinks').classList.remove('open');
+    });
+  });
+</script>
+
+</body>
+</html>
